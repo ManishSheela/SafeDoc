@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>safeDoc- where Documents are safe</title>
+	<link rel="icon" href="image/logo.svg" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+	<main>
+
+		<div class="humburgar"> <i class="fa-solid fa-bars"></i> </div>
+
+		<!-------WEBSITE CENTER LOGO SECTION -------->
+		<div class="container">
+			<div class="logo"> <img src="image/play-button.svg" alt="play" id="play-button"> </div>
+			<span class="text" id="web-name">safe<font color="#ff7466">Doc</font></span> </div>
+		<!-------WEBSITE CENTER LOGO SECTION END -------->
+
+
+		<!--------LOGIN & SIGNUP SIDEBAR -------->
+		<div class="sidebar">
+			<div class="upperbar">
+				<button id="login-btn">Login</button>&nbsp; &nbsp; &nbsp;
+				<button id="signup-btn">Sign up</button>
+			</div>
+			<!-- LOGIN FORM  -->
+
+			<div id="login">
+				<form action="" class="form-box" onsubmit="return login()" autocomplete="off">
+					<div id="input-box"> <i class="fa-solid fa-user-tie"></i>
+						<input type="email" placeholder="Email" required id="login-email"> 
+						<div id="tooltip" class="email-tooltip">
+							<span> Sorry! email not matched with database</span>
+						</div>
+					</div>
+					<div id="input-box"> <i class="fa-solid fa-unlock-keyhole"></i>
+						<input type="password" placeholder="Password" required id="login-pwd"> 
+						<div id="tooltip" class= "pwd-tooltip">
+							<span>Error: Please check that you've entered valid password!</span>
+						</div>
+					</div>
+					<input type="submit" value="Login"> 
+				</form>
+			</div>
+
+			<!-- Register FORM  -->
+			<div id="register">
+				<form action="" class="form-box"autocomplete="off" onsubmit="return register()">
+					<div id="input-box"> <i class="fa-solid fa-user-tie"></i>
+						<input type="text" placeholder="Name" id="username" required> </div>
+					<div id="input-box"> <i class="fa-solid fa-envelope"></i>
+
+						<input type="email" placeholder="Email-id" id="email" required>
+						<!-- tooltip -->
+						<div id="tooltip" class="reg-email-tooltip">
+							<span>someone already has that Email.<br>Try Another one?</span>
+						</div>
+						 </div>
+
+					<div id="input-box"> <i class="fa-solid fa-unlock-keyhole"></i>
+						<input type="password" placeholder="Password" id="password" required> </div>
+					<div id="input-box"> <i class="fa-solid fa-mobile-screen-button"></i>
+						<input type="number" placeholder="Mobile Number" id="mobile" required> </div>
+					<input type="submit" value="Sign up" id="signup_btn"> 
+				</form>
+			</div></div>
+		<!-- Login & signup SideBar end -->
+
+
+		<!-- Signup Successful Coding Start Here -->
+		<div class="signup_success container">
+
+			    <i class="fa-solid fa-check item"> </i>
+				<p class="item">You have signed up <br> successfully </p>
+				<p class="item">Thankyou for Choosing safeDoc</p>
+				<button class="signup_success_btn item">OK</button>
+		</div>
+     <!-- Signup Successful Coding End Here -->
+	</main>
+	<script src="script/script.js"></script>
+	<script src="script/log-sign.js"></script>
+	
+	
+</body>
+
+</html>
