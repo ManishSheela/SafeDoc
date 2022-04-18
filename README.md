@@ -6,6 +6,7 @@
 
 <br>
 <strong>Login and Signup </strong>
+
 ![image](https://user-images.githubusercontent.com/96982207/163768949-14fe3814-621f-46e1-9b3a-de2904273ff3.png)
 
 <br>
